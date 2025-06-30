@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+input[type="url"] {
+  width: 300px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.gallery img {
+  width: 200px;
+  height: auto;
+  border: 3px solid transparent;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.selected {
+  border: 3px solid #007bff;
+  box-shadow: 0 0 10px #007bff;
+}
